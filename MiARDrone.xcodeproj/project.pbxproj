@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25248ECF193FEFE200754319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248ECE193FEFE200754319 /* Foundation.framework */; };
+		25248ED1193FEFE200754319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248ED0193FEFE200754319 /* CoreGraphics.framework */; };
+		25248ED3193FEFE200754319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248ED2193FEFE200754319 /* UIKit.framework */; };
+		25248ED9193FEFE200754319 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25248ED7193FEFE200754319 /* InfoPlist.strings */; };
+		25248EDB193FEFE200754319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25248EDA193FEFE200754319 /* main.m */; };
+		25248EDF193FEFE200754319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25248EDE193FEFE200754319 /* AppDelegate.m */; };
+		25248EEA193FEFE300754319 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25248EE9193FEFE300754319 /* Images.xcassets */; };
+		25248EF1193FEFE300754319 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248EF0193FEFE300754319 /* XCTest.framework */; };
+		25248EF2193FEFE300754319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248ECE193FEFE200754319 /* Foundation.framework */; };
+		25248EF3193FEFE300754319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25248ED2193FEFE200754319 /* UIKit.framework */; };
+		25248EFB193FEFE300754319 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25248EF9193FEFE300754319 /* InfoPlist.strings */; };
+		25248EFD193FEFE300754319 /* MiARDroneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25248EFC193FEFE300754319 /* MiARDroneTests.m */; };
+		2528022A1952124500FD75B5 /* Btn_Landing_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 252802291952124500FD75B5 /* Btn_Landing_RETINA.png */; };
+		25280230195224C200FD75B5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2528022F195224C200FD75B5 /* GLKit.framework */; };
+		252F4F7E194F75AE0074FC49 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 252F4F7C194F75AE0074FC49 /* Localizable.strings */; };
+		253A64091940237F00861E0D /* Btn_Take_Off_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64081940237F00861E0D /* Btn_Take_Off_RETINA.png */; };
+		253A640B1940239A00861E0D /* Btn_Camera_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A640A1940239A00861E0D /* Btn_Camera_RETINA.png */; };
+		253A640D194023A900861E0D /* Btn_Settings_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A640C194023A900861E0D /* Btn_Settings_RETINA.png */; };
+		253A640F194023B600861E0D /* Btn_Emergency_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A640E194023B600861E0D /* Btn_Emergency_RETINA.png */; };
+		253A6411194023C300861E0D /* Btn_Record_0_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6410194023C300861E0D /* Btn_Record_0_RETINA.png */; };
+		253A6413194023CF00861E0D /* Btn_Photo_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6412194023CF00861E0D /* Btn_Photo_RETINA.png */; };
+		253A6415194023EC00861E0D /* Picto_Close_Window.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6414194023EC00861E0D /* Picto_Close_Window.png */; };
+		253A6417194023FD00861E0D /* Btn_Battery_3_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6416194023FD00861E0D /* Btn_Battery_3_RETINA.png */; };
+		253A64191940241500861E0D /* Joystick_Halo_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64181940241500861E0D /* Joystick_Halo_RETINA.png */; };
+		253A641B1940242300861E0D /* Joystick_Gyro_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A641A1940242300861E0D /* Joystick_Gyro_RETINA.png */; };
+		253A641D1940243800861E0D /* Joystick_Manuel_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A641C1940243800861E0D /* Joystick_Manuel_RETINA.png */; };
+		253A641F1940244900861E0D /* Barre_Window.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A641E1940244900861E0D /* Barre_Window.png */; };
+		253A64211940245700861E0D /* Picto_Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64201940245700861E0D /* Picto_Warning.png */; };
+		253A64231940246900861E0D /* TIPS_00_joypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64221940246900861E0D /* TIPS_00_joypad.png */; };
+		253A64251940247E00861E0D /* ff2.0_tips_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64241940247E00861E0D /* ff2.0_tips_bar.png */; };
+		253A64271940249000861E0D /* TIPS_01_absolute_control.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64261940249000861E0D /* TIPS_01_absolute_control.png */; };
+		253A64291940249A00861E0D /* TIPS_02_record.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64281940249A00861E0D /* TIPS_02_record.png */; };
+		253A642B194024A400861E0D /* TIPS_03_usb.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A642A194024A400861E0D /* TIPS_03_usb.png */; };
+		253A642D194024AF00861E0D /* TIPS_04_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A642C194024AF00861E0D /* TIPS_04_switch.png */; };
+		253A642F194024B900861E0D /* TIPS_05_landing.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A642E194024B900861E0D /* TIPS_05_landing.png */; };
+		253A6431194024C100861E0D /* TIPS_06_take_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6430194024C100861E0D /* TIPS_06_take_off.png */; };
+		253A6433194024CD00861E0D /* TIPS_07_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6432194024CD00861E0D /* TIPS_07_emergency.png */; };
+		253A6435194024D700861E0D /* TIPS_08_altitude.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6434194024D700861E0D /* TIPS_08_altitude.png */; };
+		253A6437194024EB00861E0D /* TIPS_09_hovering.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6436194024EB00861E0D /* TIPS_09_hovering.png */; };
+		253A6439194024F800861E0D /* TIPS_10_geolocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6438194024F800861E0D /* TIPS_10_geolocation.png */; };
+		253A643B1940250400861E0D /* TIPS_11_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A643A1940250400861E0D /* TIPS_11_share.png */; };
+		253A643D1940251000861E0D /* TIPS_12_flip.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A643C1940251000861E0D /* TIPS_12_flip.png */; };
+		253A643F1940252A00861E0D /* Picto_USB_actif.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A643E1940252A00861E0D /* Picto_USB_actif.png */; };
+		253A64411940254000861E0D /* Barre_Haut RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64401940254000861E0D /* Barre_Haut RETINA.png */; };
+		253A64431940254900861E0D /* Barre_Bas_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64421940254900861E0D /* Barre_Bas_RETINA.png */; };
+		253A64451940255A00861E0D /* Btn_Wi-Fi_2_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A64441940255A00861E0D /* Btn_Wi-Fi_2_RETINA.png */; };
+		253A6447194025C600861E0D /* Btn_Back_RETINA.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A6446194025C600861E0D /* Btn_Back_RETINA.png */; };
+		253A644C1940264C00861E0D /* initializer_fsm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 253A64491940264C00861E0D /* initializer_fsm.xml */; };
+		253A644D1940264C00861E0D /* menus_fsm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 253A644A1940264C00861E0D /* menus_fsm.xml */; };
+		253A644E1940264C00861E0D /* updater_fsm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 253A644B1940264C00861E0D /* updater_fsm.xml */; };
+		253A6452194027CC00861E0D /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 253A6450194027CC00861E0D /* Shader.fsh */; };
+		253A6453194027CC00861E0D /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 253A6451194027CC00861E0D /* Shader.vsh */; };
+		253A64571940295D00861E0D /* battery.wav in Resources */ = {isa = PBXBuildFile; fileRef = 253A64551940295D00861E0D /* battery.wav */; };
+		253A64581940295D00861E0D /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 253A64561940295D00861E0D /* plop.wav */; };
+		256C6C56193FF1D9000452B6 /* libARDroneEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C55193FF1D9000452B6 /* libARDroneEngine.a */; };
+		256C6C5B1940097F000452B6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C591940097F000452B6 /* ImageIO.framework */; };
+		256C6C5C1940097F000452B6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C5A1940097F000452B6 /* MobileCoreServices.framework */; };
+		256C6C6A19400A3D000452B6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C5D19400A3D000452B6 /* AssetsLibrary.framework */; };
+		256C6C6B19400A3D000452B6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C5E19400A3D000452B6 /* AudioToolbox.framework */; };
+		256C6C6C19400A3D000452B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C5F19400A3D000452B6 /* AVFoundation.framework */; };
+		256C6C6D19400A3D000452B6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6019400A3D000452B6 /* CFNetwork.framework */; };
+		256C6C6E19400A3D000452B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6119400A3D000452B6 /* CoreLocation.framework */; };
+		256C6C6F19400A3D000452B6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6219400A3D000452B6 /* CoreMotion.framework */; };
+		256C6C7019400A3D000452B6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6319400A3D000452B6 /* CoreVideo.framework */; };
+		256C6C7119400A3D000452B6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6419400A3D000452B6 /* MediaPlayer.framework */; };
+		256C6C7219400A3D000452B6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6519400A3D000452B6 /* MessageUI.framework */; };
+		256C6C7319400A3D000452B6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6619400A3D000452B6 /* OpenGLES.framework */; };
+		256C6C7419400A3D000452B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6719400A3D000452B6 /* QuartzCore.framework */; };
+		256C6C7519400A3D000452B6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6819400A3D000452B6 /* Security.framework */; };
+		256C6C7619400A3D000452B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256C6C6919400A3D000452B6 /* SystemConfiguration.framework */; };
+		256C6C7819400AB4000452B6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6C7719400AB4000452B6 /* MainWindow.xib */; };
+		256C6C7A19400AD4000452B6 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6C7919400AD4000452B6 /* MainWindow-iPad.xib */; };
+		256C6C7D19400BFB000452B6 /* FiniteStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C7C19400BFB000452B6 /* FiniteStateMachine.m */; };
+		256C6C8019400C05000452B6 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C7F19400C05000452B6 /* MenuController.m */; };
+		256C6C8519401000000452B6 /* opengl_shader.c in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C8319401000000452B6 /* opengl_shader.c */; };
+		256C6C8819401028000452B6 /* opengl_texture.c in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C8619401028000452B6 /* opengl_texture.c */; };
+		256C6C8B19401032000452B6 /* OpenGLSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C8A19401032000452B6 /* OpenGLSprite.m */; };
+		256C6C8E19401053000452B6 /* ESRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C8D19401053000452B6 /* ESRenderer.m */; };
+		256C6C9119401060000452B6 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C9019401060000452B6 /* EAGLView.m */; };
+		256C6C9419401385000452B6 /* MenuHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C9319401385000452B6 /* MenuHome.m */; };
+		256C6C9D194018D3000452B6 /* MenuHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6C9C194018D3000452B6 /* MenuHome.xib */; };
+		256C6C9F194018E9000452B6 /* MenuHome-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6C9E194018E9000452B6 /* MenuHome-iPad.xib */; };
+		256C6CA319401D7A000452B6 /* plf.c in Sources */ = {isa = PBXBuildFile; fileRef = 256C6CA219401D7A000452B6 /* plf.c */; };
+		256C6CA51940208C000452B6 /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6CA41940208C000452B6 /* MenuController.xib */; };
+		256C6CA81940214A000452B6 /* HUD-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6CA61940214A000452B6 /* HUD-iPad.xib */; };
+		256C6CA91940214A000452B6 /* HUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256C6CA71940214A000452B6 /* HUD.xib */; };
+		25926A1F19422D1A00129717 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25926A1E19422D1A00129717 /* CoreMedia.framework */; };
+		259B11311950C8FC002DA255 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 259B11301950C8FC002DA255 /* libxml2.dylib */; };
+		259B11401950F779002DA255 /* languages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 259B113F1950F779002DA255 /* languages.strings */; };
+		259B11431950F85E002DA255 /* ARNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B11421950F85E002DA255 /* ARNavigationController.m */; };
+		259B11451950F884002DA255 /* ARNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259B11441950F884002DA255 /* ARNavigationController.xib */; };
+		259B114B195125F6002DA255 /* SettingsMenu2-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259B1149195125F6002DA255 /* SettingsMenu2-iPad.xib */; };
+		259B114C195125F6002DA255 /* SettingsMenu2-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259B114A195125F6002DA255 /* SettingsMenu2-iPhone.xib */; };
+		25FBE455194A717A0078B2DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBE454194A717A0078B2DF /* Default-568h@2x.png */; };
+		25FBE458194A789B0078B2DF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25926A2019422D5300129717 /* CoreAudio.framework */; };
+		25FBE45A194A7AC20078B2DF /* ARMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C6C9919401819000452B6 /* ARMenuButton.m */; };
+		2F1C90F019C41D1F0024184A /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1C90EF19C41D1F0024184A /* MyoKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25248EF4193FEFE300754319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25248EC3193FEFE200754319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25248ECA193FEFE200754319;
+			remoteInfo = MiARDrone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25248ECB193FEFE200754319 /* MiARDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiARDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25248ECE193FEFE200754319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25248ED0193FEFE200754319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25248ED2193FEFE200754319 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25248ED6193FEFE200754319 /* MiARDrone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiARDrone-Info.plist"; sourceTree = "<group>"; };
+		25248ED8193FEFE200754319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25248EDA193FEFE200754319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25248EDC193FEFE200754319 /* MiARDrone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiARDrone-Prefix.pch"; sourceTree = "<group>"; };
+		25248EDD193FEFE200754319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25248EDE193FEFE200754319 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25248EE9193FEFE300754319 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25248EEF193FEFE300754319 /* MiARDroneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiARDroneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25248EF0193FEFE300754319 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		25248EF8193FEFE300754319 /* MiARDroneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiARDroneTests-Info.plist"; sourceTree = "<group>"; };
+		25248EFA193FEFE300754319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25248EFC193FEFE300754319 /* MiARDroneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiARDroneTests.m; sourceTree = "<group>"; };
+		252802291952124500FD75B5 /* Btn_Landing_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Landing_RETINA.png; sourceTree = "<group>"; };
+		2528022F195224C200FD75B5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		252F4F7D194F75AE0074FC49 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		253A64081940237F00861E0D /* Btn_Take_Off_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Take_Off_RETINA.png; sourceTree = "<group>"; };
+		253A640A1940239A00861E0D /* Btn_Camera_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Camera_RETINA.png; sourceTree = "<group>"; };
+		253A640C194023A900861E0D /* Btn_Settings_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Settings_RETINA.png; sourceTree = "<group>"; };
+		253A640E194023B600861E0D /* Btn_Emergency_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Emergency_RETINA.png; sourceTree = "<group>"; };
+		253A6410194023C300861E0D /* Btn_Record_0_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Record_0_RETINA.png; sourceTree = "<group>"; };
+		253A6412194023CF00861E0D /* Btn_Photo_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Photo_RETINA.png; sourceTree = "<group>"; };
+		253A6414194023EC00861E0D /* Picto_Close_Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Picto_Close_Window.png; sourceTree = "<group>"; };
+		253A6416194023FD00861E0D /* Btn_Battery_3_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Battery_3_RETINA.png; sourceTree = "<group>"; };
+		253A64181940241500861E0D /* Joystick_Halo_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick_Halo_RETINA.png; sourceTree = "<group>"; };
+		253A641A1940242300861E0D /* Joystick_Gyro_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick_Gyro_RETINA.png; sourceTree = "<group>"; };
+		253A641C1940243800861E0D /* Joystick_Manuel_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick_Manuel_RETINA.png; sourceTree = "<group>"; };
+		253A641E1940244900861E0D /* Barre_Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barre_Window.png; sourceTree = "<group>"; };
+		253A64201940245700861E0D /* Picto_Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Picto_Warning.png; sourceTree = "<group>"; };
+		253A64221940246900861E0D /* TIPS_00_joypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_00_joypad.png; sourceTree = "<group>"; };
+		253A64241940247E00861E0D /* ff2.0_tips_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff2.0_tips_bar.png; sourceTree = "<group>"; };
+		253A64261940249000861E0D /* TIPS_01_absolute_control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_01_absolute_control.png; sourceTree = "<group>"; };
+		253A64281940249A00861E0D /* TIPS_02_record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_02_record.png; sourceTree = "<group>"; };
+		253A642A194024A400861E0D /* TIPS_03_usb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_03_usb.png; sourceTree = "<group>"; };
+		253A642C194024AF00861E0D /* TIPS_04_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_04_switch.png; sourceTree = "<group>"; };
+		253A642E194024B900861E0D /* TIPS_05_landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_05_landing.png; sourceTree = "<group>"; };
+		253A6430194024C100861E0D /* TIPS_06_take_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_06_take_off.png; sourceTree = "<group>"; };
+		253A6432194024CD00861E0D /* TIPS_07_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_07_emergency.png; sourceTree = "<group>"; };
+		253A6434194024D700861E0D /* TIPS_08_altitude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_08_altitude.png; sourceTree = "<group>"; };
+		253A6436194024EB00861E0D /* TIPS_09_hovering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_09_hovering.png; sourceTree = "<group>"; };
+		253A6438194024F800861E0D /* TIPS_10_geolocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_10_geolocation.png; sourceTree = "<group>"; };
+		253A643A1940250400861E0D /* TIPS_11_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_11_share.png; sourceTree = "<group>"; };
+		253A643C1940251000861E0D /* TIPS_12_flip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIPS_12_flip.png; sourceTree = "<group>"; };
+		253A643E1940252A00861E0D /* Picto_USB_actif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Picto_USB_actif.png; sourceTree = "<group>"; };
+		253A64401940254000861E0D /* Barre_Haut RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Barre_Haut RETINA.png"; sourceTree = "<group>"; };
+		253A64421940254900861E0D /* Barre_Bas_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barre_Bas_RETINA.png; sourceTree = "<group>"; };
+		253A64441940255A00861E0D /* Btn_Wi-Fi_2_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_Wi-Fi_2_RETINA.png"; sourceTree = "<group>"; };
+		253A6446194025C600861E0D /* Btn_Back_RETINA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_Back_RETINA.png; sourceTree = "<group>"; };
+		253A64491940264C00861E0D /* initializer_fsm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = initializer_fsm.xml; sourceTree = "<group>"; };
+		253A644A1940264C00861E0D /* menus_fsm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = menus_fsm.xml; sourceTree = "<group>"; };
+		253A644B1940264C00861E0D /* updater_fsm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = updater_fsm.xml; sourceTree = "<group>"; };
+		253A6450194027CC00861E0D /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		253A6451194027CC00861E0D /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		253A64551940295D00861E0D /* battery.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battery.wav; sourceTree = "<group>"; };
+		253A64561940295D00861E0D /* plop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plop.wav; sourceTree = "<group>"; };
+		256C6C55193FF1D9000452B6 /* libARDroneEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARDroneEngine.a; path = ARDrone_SDK_2_0_1/ControlEngine/iPhone/Release/libARDroneEngine.a; sourceTree = "<group>"; };
+		256C6C591940097F000452B6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		256C6C5A1940097F000452B6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		256C6C5D19400A3D000452B6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		256C6C5E19400A3D000452B6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		256C6C5F19400A3D000452B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		256C6C6019400A3D000452B6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		256C6C6119400A3D000452B6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		256C6C6219400A3D000452B6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		256C6C6319400A3D000452B6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		256C6C6419400A3D000452B6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		256C6C6519400A3D000452B6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		256C6C6619400A3D000452B6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		256C6C6719400A3D000452B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		256C6C6819400A3D000452B6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		256C6C6919400A3D000452B6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		256C6C7719400AB4000452B6 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = MiARDrone/MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		256C6C7919400AD4000452B6 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "MiARDrone/MainWindow-iPad.xib"; sourceTree = SOURCE_ROOT; };
+		256C6C7B19400BFB000452B6 /* FiniteStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiniteStateMachine.h; sourceTree = "<group>"; };
+		256C6C7C19400BFB000452B6 /* FiniteStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiniteStateMachine.m; sourceTree = "<group>"; };
+		256C6C7E19400C05000452B6 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		256C6C7F19400C05000452B6 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		256C6C8119400C1B000452B6 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		256C6C8319401000000452B6 /* opengl_shader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opengl_shader.c; sourceTree = "<group>"; };
+		256C6C8419401000000452B6 /* opengl_shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_shader.h; sourceTree = "<group>"; };
+		256C6C8619401028000452B6 /* opengl_texture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opengl_texture.c; sourceTree = "<group>"; };
+		256C6C8719401028000452B6 /* opengl_texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_texture.h; sourceTree = "<group>"; };
+		256C6C8919401032000452B6 /* OpenGLSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLSprite.h; sourceTree = "<group>"; };
+		256C6C8A19401032000452B6 /* OpenGLSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLSprite.m; sourceTree = "<group>"; };
+		256C6C8C19401053000452B6 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		256C6C8D19401053000452B6 /* ESRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESRenderer.m; sourceTree = "<group>"; };
+		256C6C8F19401060000452B6 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		256C6C9019401060000452B6 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		256C6C9219401385000452B6 /* MenuHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuHome.h; path = MiARDrone/MenuHome.h; sourceTree = SOURCE_ROOT; };
+		256C6C9319401385000452B6 /* MenuHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHome.m; sourceTree = "<group>"; };
+		256C6C9819401819000452B6 /* ARMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMenuButton.h; sourceTree = "<group>"; };
+		256C6C9919401819000452B6 /* ARMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMenuButton.m; sourceTree = "<group>"; };
+		256C6C9B19401830000452B6 /* ARUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARUtils.h; sourceTree = "<group>"; };
+		256C6C9C194018D3000452B6 /* MenuHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHome.xib; path = MiARDrone/MenuHome.xib; sourceTree = SOURCE_ROOT; };
+		256C6C9E194018E9000452B6 /* MenuHome-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MenuHome-iPad.xib"; path = "MiARDrone/MenuHome-iPad.xib"; sourceTree = SOURCE_ROOT; };
+		256C6CA119401D7A000452B6 /* plf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plf.h; sourceTree = "<group>"; };
+		256C6CA219401D7A000452B6 /* plf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plf.c; sourceTree = "<group>"; };
+		256C6CA41940208C000452B6 /* MenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuController.xib; path = MiARDrone/MenuController.xib; sourceTree = SOURCE_ROOT; };
+		256C6CA61940214A000452B6 /* HUD-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HUD-iPad.xib"; sourceTree = "<group>"; };
+		256C6CA71940214A000452B6 /* HUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HUD.xib; sourceTree = "<group>"; };
+		25926A1E19422D1A00129717 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		25926A2019422D5300129717 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		259B11301950C8FC002DA255 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		259B113F1950F779002DA255 /* languages.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = languages.strings; sourceTree = "<group>"; };
+		259B11411950F85E002DA255 /* ARNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARNavigationController.h; sourceTree = "<group>"; };
+		259B11421950F85E002DA255 /* ARNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARNavigationController.m; sourceTree = "<group>"; };
+		259B11441950F884002DA255 /* ARNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARNavigationController.xib; sourceTree = "<group>"; };
+		259B1146195115FC002DA255 /* HelveticaNeue-CondensedBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-CondensedBold.ttf"; sourceTree = "<group>"; };
+		259B1149195125F6002DA255 /* SettingsMenu2-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingsMenu2-iPad.xib"; sourceTree = "<group>"; };
+		259B114A195125F6002DA255 /* SettingsMenu2-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingsMenu2-iPhone.xib"; sourceTree = "<group>"; };
+		25FBE454194A717A0078B2DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2F1C90EF19C41D1F0024184A /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25248EC8193FEFE200754319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25280230195224C200FD75B5 /* GLKit.framework in Frameworks */,
+				259B11311950C8FC002DA255 /* libxml2.dylib in Frameworks */,
+				25FBE458194A789B0078B2DF /* CoreAudio.framework in Frameworks */,
+				25926A1F19422D1A00129717 /* CoreMedia.framework in Frameworks */,
+				256C6C6D19400A3D000452B6 /* CFNetwork.framework in Frameworks */,
+				256C6C6A19400A3D000452B6 /* AssetsLibrary.framework in Frameworks */,
+				256C6C6B19400A3D000452B6 /* AudioToolbox.framework in Frameworks */,
+				256C6C6C19400A3D000452B6 /* AVFoundation.framework in Frameworks */,
+				256C6C6E19400A3D000452B6 /* CoreLocation.framework in Frameworks */,
+				2F1C90F019C41D1F0024184A /* MyoKit.framework in Frameworks */,
+				256C6C6F19400A3D000452B6 /* CoreMotion.framework in Frameworks */,
+				256C6C7019400A3D000452B6 /* CoreVideo.framework in Frameworks */,
+				256C6C7119400A3D000452B6 /* MediaPlayer.framework in Frameworks */,
+				256C6C7219400A3D000452B6 /* MessageUI.framework in Frameworks */,
+				256C6C7319400A3D000452B6 /* OpenGLES.framework in Frameworks */,
+				256C6C7419400A3D000452B6 /* QuartzCore.framework in Frameworks */,
+				256C6C7519400A3D000452B6 /* Security.framework in Frameworks */,
+				256C6C7619400A3D000452B6 /* SystemConfiguration.framework in Frameworks */,
+				256C6C5B1940097F000452B6 /* ImageIO.framework in Frameworks */,
+				256C6C5C1940097F000452B6 /* MobileCoreServices.framework in Frameworks */,
+				256C6C56193FF1D9000452B6 /* libARDroneEngine.a in Frameworks */,
+				25248ED1193FEFE200754319 /* CoreGraphics.framework in Frameworks */,
+				25248ED3193FEFE200754319 /* UIKit.framework in Frameworks */,
+				25248ECF193FEFE200754319 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25248EEC193FEFE300754319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25248EF1193FEFE300754319 /* XCTest.framework in Frameworks */,
+				25248EF3193FEFE300754319 /* UIKit.framework in Frameworks */,
+				25248EF2193FEFE300754319 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25248EC2193FEFE200754319 = {
+			isa = PBXGroup;
+			children = (
+				25FBE454194A717A0078B2DF /* Default-568h@2x.png */,
+				25248ED4193FEFE200754319 /* MiARDrone */,
+				25248EF6193FEFE300754319 /* MiARDroneTests */,
+				25248ECD193FEFE200754319 /* Frameworks */,
+				25248ECC193FEFE200754319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25248ECC193FEFE200754319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25248ECB193FEFE200754319 /* MiARDrone.app */,
+				25248EEF193FEFE300754319 /* MiARDroneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25248ECD193FEFE200754319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1C90EF19C41D1F0024184A /* MyoKit.framework */,
+				2528022F195224C200FD75B5 /* GLKit.framework */,
+				259B11301950C8FC002DA255 /* libxml2.dylib */,
+				25926A2019422D5300129717 /* CoreAudio.framework */,
+				25926A1E19422D1A00129717 /* CoreMedia.framework */,
+				256C6C5D19400A3D000452B6 /* AssetsLibrary.framework */,
+				256C6C5E19400A3D000452B6 /* AudioToolbox.framework */,
+				256C6C5F19400A3D000452B6 /* AVFoundation.framework */,
+				256C6C6019400A3D000452B6 /* CFNetwork.framework */,
+				256C6C6119400A3D000452B6 /* CoreLocation.framework */,
+				256C6C6219400A3D000452B6 /* CoreMotion.framework */,
+				256C6C6319400A3D000452B6 /* CoreVideo.framework */,
+				256C6C6419400A3D000452B6 /* MediaPlayer.framework */,
+				256C6C6519400A3D000452B6 /* MessageUI.framework */,
+				256C6C6619400A3D000452B6 /* OpenGLES.framework */,
+				256C6C6719400A3D000452B6 /* QuartzCore.framework */,
+				256C6C6819400A3D000452B6 /* Security.framework */,
+				256C6C6919400A3D000452B6 /* SystemConfiguration.framework */,
+				256C6C591940097F000452B6 /* ImageIO.framework */,
+				256C6C5A1940097F000452B6 /* MobileCoreServices.framework */,
+				256C6C55193FF1D9000452B6 /* libARDroneEngine.a */,
+				25248ECE193FEFE200754319 /* Foundation.framework */,
+				25248ED0193FEFE200754319 /* CoreGraphics.framework */,
+				25248ED2193FEFE200754319 /* UIKit.framework */,
+				25248EF0193FEFE300754319 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25248ED4193FEFE200754319 /* MiARDrone */ = {
+			isa = PBXGroup;
+			children = (
+				252F4F7C194F75AE0074FC49 /* Localizable.strings */,
+				259B113F1950F779002DA255 /* languages.strings */,
+				253A64541940295000861E0D /* Sounds */,
+				253A644F194027B900861E0D /* Shaders */,
+				253A64481940263E00861E0D /* XML */,
+				253A64071940236C00861E0D /* Resources */,
+				256C6CA019401B62000452B6 /* Interfaces */,
+				256C6C9719401806000452B6 /* Utils */,
+				256C6C8219400FF4000452B6 /* Video */,
+				256C6C7B19400BFB000452B6 /* FiniteStateMachine.h */,
+				256C6C7C19400BFB000452B6 /* FiniteStateMachine.m */,
+				256C6CA119401D7A000452B6 /* plf.h */,
+				256C6CA219401D7A000452B6 /* plf.c */,
+				256C6C8119400C1B000452B6 /* Common.h */,
+				256C6C8C19401053000452B6 /* ESRenderer.h */,
+				256C6C8D19401053000452B6 /* ESRenderer.m */,
+				256C6C8F19401060000452B6 /* EAGLView.h */,
+				256C6C9019401060000452B6 /* EAGLView.m */,
+				256C6C7E19400C05000452B6 /* MenuController.h */,
+				256C6C7F19400C05000452B6 /* MenuController.m */,
+				25248EDD193FEFE200754319 /* AppDelegate.h */,
+				25248EDE193FEFE200754319 /* AppDelegate.m */,
+				256C6C7719400AB4000452B6 /* MainWindow.xib */,
+				256C6C7919400AD4000452B6 /* MainWindow-iPad.xib */,
+				256C6C9219401385000452B6 /* MenuHome.h */,
+				256C6C9319401385000452B6 /* MenuHome.m */,
+				25248EE9193FEFE300754319 /* Images.xcassets */,
+				25248ED5193FEFE200754319 /* Supporting Files */,
+			);
+			path = MiARDrone;
+			sourceTree = "<group>";
+		};
+		25248ED5193FEFE200754319 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25248ED6193FEFE200754319 /* MiARDrone-Info.plist */,
+				25248ED7193FEFE200754319 /* InfoPlist.strings */,
+				25248EDA193FEFE200754319 /* main.m */,
+				25248EDC193FEFE200754319 /* MiARDrone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25248EF6193FEFE300754319 /* MiARDroneTests */ = {
+			isa = PBXGroup;
+			children = (
+				25248EFC193FEFE300754319 /* MiARDroneTests.m */,
+				25248EF7193FEFE300754319 /* Supporting Files */,
+			);
+			path = MiARDroneTests;
+			sourceTree = "<group>";
+		};
+		25248EF7193FEFE300754319 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25248EF8193FEFE300754319 /* MiARDroneTests-Info.plist */,
+				25248EF9193FEFE300754319 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		253A64071940236C00861E0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				259B1146195115FC002DA255 /* HelveticaNeue-CondensedBold.ttf */,
+				253A64241940247E00861E0D /* ff2.0_tips_bar.png */,
+				253A64221940246900861E0D /* TIPS_00_joypad.png */,
+				253A64261940249000861E0D /* TIPS_01_absolute_control.png */,
+				253A64281940249A00861E0D /* TIPS_02_record.png */,
+				253A642A194024A400861E0D /* TIPS_03_usb.png */,
+				253A642C194024AF00861E0D /* TIPS_04_switch.png */,
+				253A642E194024B900861E0D /* TIPS_05_landing.png */,
+				253A6430194024C100861E0D /* TIPS_06_take_off.png */,
+				253A6432194024CD00861E0D /* TIPS_07_emergency.png */,
+				253A6434194024D700861E0D /* TIPS_08_altitude.png */,
+				253A6436194024EB00861E0D /* TIPS_09_hovering.png */,
+				253A6438194024F800861E0D /* TIPS_10_geolocation.png */,
+				253A643A1940250400861E0D /* TIPS_11_share.png */,
+				253A643C1940251000861E0D /* TIPS_12_flip.png */,
+				253A641C1940243800861E0D /* Joystick_Manuel_RETINA.png */,
+				253A641A1940242300861E0D /* Joystick_Gyro_RETINA.png */,
+				253A64181940241500861E0D /* Joystick_Halo_RETINA.png */,
+				253A641E1940244900861E0D /* Barre_Window.png */,
+				253A6414194023EC00861E0D /* Picto_Close_Window.png */,
+				253A64201940245700861E0D /* Picto_Warning.png */,
+				253A643E1940252A00861E0D /* Picto_USB_actif.png */,
+				252802291952124500FD75B5 /* Btn_Landing_RETINA.png */,
+				253A6416194023FD00861E0D /* Btn_Battery_3_RETINA.png */,
+				253A6412194023CF00861E0D /* Btn_Photo_RETINA.png */,
+				253A6410194023C300861E0D /* Btn_Record_0_RETINA.png */,
+				253A640E194023B600861E0D /* Btn_Emergency_RETINA.png */,
+				253A640C194023A900861E0D /* Btn_Settings_RETINA.png */,
+				253A640A1940239A00861E0D /* Btn_Camera_RETINA.png */,
+				253A64081940237F00861E0D /* Btn_Take_Off_RETINA.png */,
+				253A6446194025C600861E0D /* Btn_Back_RETINA.png */,
+				253A64441940255A00861E0D /* Btn_Wi-Fi_2_RETINA.png */,
+				253A64401940254000861E0D /* Barre_Haut RETINA.png */,
+				253A64421940254900861E0D /* Barre_Bas_RETINA.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		253A64481940263E00861E0D /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				253A64491940264C00861E0D /* initializer_fsm.xml */,
+				253A644A1940264C00861E0D /* menus_fsm.xml */,
+				253A644B1940264C00861E0D /* updater_fsm.xml */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		253A644F194027B900861E0D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				253A6450194027CC00861E0D /* Shader.fsh */,
+				253A6451194027CC00861E0D /* Shader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		253A64541940295000861E0D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				253A64551940295D00861E0D /* battery.wav */,
+				253A64561940295D00861E0D /* plop.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		256C6C8219400FF4000452B6 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				256C6C8319401000000452B6 /* opengl_shader.c */,
+				256C6C8419401000000452B6 /* opengl_shader.h */,
+				256C6C8619401028000452B6 /* opengl_texture.c */,
+				256C6C8719401028000452B6 /* opengl_texture.h */,
+				256C6C8919401032000452B6 /* OpenGLSprite.h */,
+				256C6C8A19401032000452B6 /* OpenGLSprite.m */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		256C6C9719401806000452B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				259B11411950F85E002DA255 /* ARNavigationController.h */,
+				259B11421950F85E002DA255 /* ARNavigationController.m */,
+				256C6C9819401819000452B6 /* ARMenuButton.h */,
+				256C6C9919401819000452B6 /* ARMenuButton.m */,
+				256C6C9B19401830000452B6 /* ARUtils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		256C6CA019401B62000452B6 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				256C6CA61940214A000452B6 /* HUD-iPad.xib */,
+				256C6CA71940214A000452B6 /* HUD.xib */,
+				259B1149195125F6002DA255 /* SettingsMenu2-iPad.xib */,
+				259B114A195125F6002DA255 /* SettingsMenu2-iPhone.xib */,
+				256C6C9C194018D3000452B6 /* MenuHome.xib */,
+				256C6C9E194018E9000452B6 /* MenuHome-iPad.xib */,
+				256C6CA41940208C000452B6 /* MenuController.xib */,
+				259B11441950F884002DA255 /* ARNavigationController.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25248ECA193FEFE200754319 /* MiARDrone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25248F00193FEFE300754319 /* Build configuration list for PBXNativeTarget "MiARDrone" */;
+			buildPhases = (
+				25248EC7193FEFE200754319 /* Sources */,
+				25248EC8193FEFE200754319 /* Frameworks */,
+				25248EC9193FEFE200754319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiARDrone;
+			productName = MiARDrone;
+			productReference = 25248ECB193FEFE200754319 /* MiARDrone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25248EEE193FEFE300754319 /* MiARDroneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25248F03193FEFE300754319 /* Build configuration list for PBXNativeTarget "MiARDroneTests" */;
+			buildPhases = (
+				25248EEB193FEFE300754319 /* Sources */,
+				25248EEC193FEFE300754319 /* Frameworks */,
+				25248EED193FEFE300754319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25248EF5193FEFE300754319 /* PBXTargetDependency */,
+			);
+			name = MiARDroneTests;
+			productName = MiARDroneTests;
+			productReference = 25248EEF193FEFE300754319 /* MiARDroneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25248EC3193FEFE200754319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sabrina Lizbeth Vega Maldonado";
+				TargetAttributes = {
+					25248ECA193FEFE200754319 = {
+						DevelopmentTeam = K3YXBJF8JZ;
+					};
+					25248EEE193FEFE300754319 = {
+						TestTargetID = 25248ECA193FEFE200754319;
+					};
+				};
+			};
+			buildConfigurationList = 25248EC6193FEFE200754319 /* Build configuration list for PBXProject "MiARDrone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 25248EC2193FEFE200754319;
+			productRefGroup = 25248ECC193FEFE200754319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25248ECA193FEFE200754319 /* MiARDrone */,
+				25248EEE193FEFE300754319 /* MiARDroneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25248EC9193FEFE200754319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256C6C9D194018D3000452B6 /* MenuHome.xib in Resources */,
+				253A6417194023FD00861E0D /* Btn_Battery_3_RETINA.png in Resources */,
+				253A64191940241500861E0D /* Joystick_Halo_RETINA.png in Resources */,
+				253A643D1940251000861E0D /* TIPS_12_flip.png in Resources */,
+				253A6413194023CF00861E0D /* Btn_Photo_RETINA.png in Resources */,
+				253A644C1940264C00861E0D /* initializer_fsm.xml in Resources */,
+				253A642F194024B900861E0D /* TIPS_05_landing.png in Resources */,
+				259B114B195125F6002DA255 /* SettingsMenu2-iPad.xib in Resources */,
+				25FBE455194A717A0078B2DF /* Default-568h@2x.png in Resources */,
+				2528022A1952124500FD75B5 /* Btn_Landing_RETINA.png in Resources */,
+				252F4F7E194F75AE0074FC49 /* Localizable.strings in Resources */,
+				253A643B1940250400861E0D /* TIPS_11_share.png in Resources */,
+				253A641B1940242300861E0D /* Joystick_Gyro_RETINA.png in Resources */,
+				253A6452194027CC00861E0D /* Shader.fsh in Resources */,
+				253A6447194025C600861E0D /* Btn_Back_RETINA.png in Resources */,
+				253A64431940254900861E0D /* Barre_Bas_RETINA.png in Resources */,
+				253A64411940254000861E0D /* Barre_Haut RETINA.png in Resources */,
+				253A64231940246900861E0D /* TIPS_00_joypad.png in Resources */,
+				253A6453194027CC00861E0D /* Shader.vsh in Resources */,
+				253A64581940295D00861E0D /* plop.wav in Resources */,
+				253A64271940249000861E0D /* TIPS_01_absolute_control.png in Resources */,
+				256C6CA81940214A000452B6 /* HUD-iPad.xib in Resources */,
+				253A6435194024D700861E0D /* TIPS_08_altitude.png in Resources */,
+				259B11401950F779002DA255 /* languages.strings in Resources */,
+				259B114C195125F6002DA255 /* SettingsMenu2-iPhone.xib in Resources */,
+				256C6CA51940208C000452B6 /* MenuController.xib in Resources */,
+				253A6415194023EC00861E0D /* Picto_Close_Window.png in Resources */,
+				253A64291940249A00861E0D /* TIPS_02_record.png in Resources */,
+				253A6433194024CD00861E0D /* TIPS_07_emergency.png in Resources */,
+				253A643F1940252A00861E0D /* Picto_USB_actif.png in Resources */,
+				253A64451940255A00861E0D /* Btn_Wi-Fi_2_RETINA.png in Resources */,
+				253A640B1940239A00861E0D /* Btn_Camera_RETINA.png in Resources */,
+				253A640D194023A900861E0D /* Btn_Settings_RETINA.png in Resources */,
+				253A644E1940264C00861E0D /* updater_fsm.xml in Resources */,
+				256C6C9F194018E9000452B6 /* MenuHome-iPad.xib in Resources */,
+				253A64251940247E00861E0D /* ff2.0_tips_bar.png in Resources */,
+				253A641F1940244900861E0D /* Barre_Window.png in Resources */,
+				253A64091940237F00861E0D /* Btn_Take_Off_RETINA.png in Resources */,
+				253A6431194024C100861E0D /* TIPS_06_take_off.png in Resources */,
+				253A641D1940243800861E0D /* Joystick_Manuel_RETINA.png in Resources */,
+				253A6437194024EB00861E0D /* TIPS_09_hovering.png in Resources */,
+				253A640F194023B600861E0D /* Btn_Emergency_RETINA.png in Resources */,
+				256C6C7A19400AD4000452B6 /* MainWindow-iPad.xib in Resources */,
+				253A644D1940264C00861E0D /* menus_fsm.xml in Resources */,
+				253A6411194023C300861E0D /* Btn_Record_0_RETINA.png in Resources */,
+				253A642D194024AF00861E0D /* TIPS_04_switch.png in Resources */,
+				253A642B194024A400861E0D /* TIPS_03_usb.png in Resources */,
+				25248EEA193FEFE300754319 /* Images.xcassets in Resources */,
+				256C6CA91940214A000452B6 /* HUD.xib in Resources */,
+				25248ED9193FEFE200754319 /* InfoPlist.strings in Resources */,
+				253A64211940245700861E0D /* Picto_Warning.png in Resources */,
+				256C6C7819400AB4000452B6 /* MainWindow.xib in Resources */,
+				253A64571940295D00861E0D /* battery.wav in Resources */,
+				259B11451950F884002DA255 /* ARNavigationController.xib in Resources */,
+				253A6439194024F800861E0D /* TIPS_10_geolocation.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25248EED193FEFE300754319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25248EFB193FEFE300754319 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25248EC7193FEFE200754319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256C6C9419401385000452B6 /* MenuHome.m in Sources */,
+				25FBE45A194A7AC20078B2DF /* ARMenuButton.m in Sources */,
+				256C6C7D19400BFB000452B6 /* FiniteStateMachine.m in Sources */,
+				256C6C8519401000000452B6 /* opengl_shader.c in Sources */,
+				256C6C8819401028000452B6 /* opengl_texture.c in Sources */,
+				256C6C9119401060000452B6 /* EAGLView.m in Sources */,
+				256C6CA319401D7A000452B6 /* plf.c in Sources */,
+				256C6C8019400C05000452B6 /* MenuController.m in Sources */,
+				256C6C8E19401053000452B6 /* ESRenderer.m in Sources */,
+				256C6C8B19401032000452B6 /* OpenGLSprite.m in Sources */,
+				259B11431950F85E002DA255 /* ARNavigationController.m in Sources */,
+				25248EDF193FEFE200754319 /* AppDelegate.m in Sources */,
+				25248EDB193FEFE200754319 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25248EEB193FEFE300754319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25248EFD193FEFE300754319 /* MiARDroneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25248EF5193FEFE300754319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25248ECA193FEFE200754319 /* MiARDrone */;
+			targetProxy = 25248EF4193FEFE300754319 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25248ED7193FEFE200754319 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25248ED8193FEFE200754319 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25248EF9193FEFE300754319 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25248EFA193FEFE300754319 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		252F4F7C194F75AE0074FC49 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				252F4F7D194F75AE0074FC49 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25248EFE193FEFE300754319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Perez-Cisneros (E4565P6Q75)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marco Perez-Cisneros (E4565P6Q75)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "ACB92739-2F97-47D3-AEC6-8EE5A3C3198D";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		25248EFF193FEFE300754319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Perez-Cisneros (E4565P6Q75)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marco Perez-Cisneros (E4565P6Q75)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "ACB92739-2F97-47D3-AEC6-8EE5A3C3198D";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		25248F01193FEFE300754319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Srinivasarao Samudrala (HDMR9BY7EV)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiARDrone/MiARDrone-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/ControlEngine/iPhone/Release",
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/GoogleAPI/**",
+				);
+				INFOPLIST_FILE = "MiARDrone/MiARDrone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARDrone_SDK_2_0_1/ControlEngine/iPhone/Release",
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/GoogleAPI/**",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-Wl,-no_pie",
+					"-lxml2",
+				);
+				PRODUCT_NAME = MiARDrone;
+				PROVISIONING_PROFILE = "3c13ee43-d4eb-4386-83d8-124af6aed6cb";
+				SDKROOT = iphoneos6.1;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25248F02193FEFE300754319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Srinivasarao Samudrala (HDMR9BY7EV)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiARDrone/MiARDrone-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/ControlEngine/iPhone/Release",
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/GoogleAPI/**",
+				);
+				INFOPLIST_FILE = "MiARDrone/MiARDrone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARDrone_SDK_2_0_1/ControlEngine/iPhone/Release",
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/ARDRONE_SDK_2_0_1/GoogleAPI/**",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-no_pie",
+					"-lxml2",
+				);
+				PRODUCT_NAME = MiARDrone;
+				PROVISIONING_PROFILE = "3c13ee43-d4eb-4386-83d8-124af6aed6cb";
+				SDKROOT = iphoneos6.1;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		25248F04193FEFE300754319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiARDrone.app/MiARDrone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiARDrone/MiARDrone-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MiARDroneTests/MiARDroneTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = MiARDroneTests;
+				SDKROOT = iphoneos6.1;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		25248F05193FEFE300754319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiARDrone.app/MiARDrone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiARDrone/MiARDrone-Prefix.pch";
+				INFOPLIST_FILE = "MiARDroneTests/MiARDroneTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = MiARDroneTests;
+				SDKROOT = iphoneos6.1;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25248EC6193FEFE200754319 /* Build configuration list for PBXProject "MiARDrone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25248EFE193FEFE300754319 /* Debug */,
+				25248EFF193FEFE300754319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25248F00193FEFE300754319 /* Build configuration list for PBXNativeTarget "MiARDrone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25248F01193FEFE300754319 /* Debug */,
+				25248F02193FEFE300754319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25248F03193FEFE300754319 /* Build configuration list for PBXNativeTarget "MiARDroneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25248F04193FEFE300754319 /* Debug */,
+				25248F05193FEFE300754319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25248EC3193FEFE200754319 /* Project object */;
+}
